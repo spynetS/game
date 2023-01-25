@@ -6,8 +6,6 @@ public class Movement : MonoBehaviour
 {
     public float speed = 10.0f;
     public float rotSpeed = 100f;
-    public Gun gun; 
-
     // Update is called once per frame
     void Update()
     {
@@ -21,9 +19,6 @@ public class Movement : MonoBehaviour
         /* rotation *= Time.deltaTime; */
         // Move translation along the object's z-axis
         transform.Translate( translationx,0 , translation);
-        if (Input.GetKeyDown("space")){
-            gun.Shoot();
-        }
 
     }
 }

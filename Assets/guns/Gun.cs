@@ -8,12 +8,18 @@ public class Gun : MonoBehaviour
     public GameObject barrel;
     public float force = 600;
 
+    public void hit(){
+        GetComponentInParent<Player>().points++;
+    }
+
     public void Shoot(){
 
         GameObject clone = Instantiate(bullet, (barrel.transform.position+(transform.up*1)), Quaternion.identity);
-
+        clone.GetComponent<Bullet>().from = this;
         clone.transform.LookAt(barrel.transform.position);
-        clone.GetComponent<Rigidbody>().AddForce(clone.transform.forward*-force);
+        try{
+            clone.GetComponent<Rigidbody>().AddForce(clone.transform.forward*-force);
+        }catch{}
     }
 
 }

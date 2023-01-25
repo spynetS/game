@@ -5,14 +5,17 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float time = 0;
-    // Update is called once per frame
+    public int damage = 10;
+    private float ctime = 0;
+    public Gun from;
+
     void FixedUpdate()
     {
 
-        if(time>300){
+        if(ctime>time){
             Destroy(gameObject);
         }
-
-        time++;
+        ctime++;
+        
     }
 }
