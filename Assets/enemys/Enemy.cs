@@ -8,6 +8,8 @@ public class Enemy : MonoBehaviour
     public GameObject material;
     public Color firstColor;
     public GameObject healthText;
+    int time = 0;
+
     public void takeDamage(Collider other){
         if(health <= 0)
             Destroy(gameObject);
@@ -19,7 +21,7 @@ public class Enemy : MonoBehaviour
         // material.GetComponent<MeshRenderer> ().material.color = Color.red;
         time = 0;
     }
-    int time =0;
+
     public void Start(){
         firstColor = material.GetComponent<MeshRenderer> ().material.color;
 

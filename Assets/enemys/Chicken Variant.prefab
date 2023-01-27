@@ -168,12 +168,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 4.294143}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_renderer: {fileID: 7090196286900418943}
-  m_maskType: 0
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+  m_hasFontAssetChanged: 0
+  m_renderer: {fileID: 7090196286900418943}
+  m_maskType: 0
 --- !u!1001 &483915923837102214
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -229,9 +229,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 54011750179816588, guid: aa3784adb6428184e991be2d60ee0cb2, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 114807186997810214, guid: aa3784adb6428184e991be2d60ee0cb2, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6344557386423682938, guid: aa3784adb6428184e991be2d60ee0cb2, type: 3}
+      propertyPath: speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6344557386423682938, guid: aa3784adb6428184e991be2d60ee0cb2, type: 3}
+      propertyPath: maxTime
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6344557386423682938, guid: aa3784adb6428184e991be2d60ee0cb2, type: 3}
+      propertyPath: direction.x
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa3784adb6428184e991be2d60ee0cb2, type: 3}
