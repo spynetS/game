@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    [SerializeField] private float CurrentSensitivity;
-    [SerializeField] private float DefaultSensitivity;
+    [SerializeField] private float CurrentSensitivity = 300;
+    [SerializeField] private float DefaultSensitivity = 300;
     [SerializeField] private float AimingSensitivity;
 
     [SerializeField] private float Rotate_X;
