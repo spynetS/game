@@ -7,7 +7,11 @@ public class Gun : MonoBehaviour
     public GameObject bullet;
     public GameObject barrel;
     public float force = 600;
-
+	
+	public string name = "Deagle";
+	public string damage = "damage";
+	public int speed = 100;
+	
     public void hit(){
         GetComponentInParent<Player>().points++;
     }

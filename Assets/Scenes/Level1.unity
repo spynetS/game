@@ -5263,7 +5263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92e3e655a1e70ad819589415679c9098, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 8
   rotSpeed: 100
 --- !u!4 &1710259188 stripped
 Transform:
