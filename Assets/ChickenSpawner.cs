@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class ChickenSpawner : MonoBehaviour
 {
-    public int chickens;
+    public int        chickens;
     public GameObject chicken;
+	public GameObject player;
+	public GameObject gun1;
+	public GameObject gun2;
+	public GameObject gun3;
+	
     // Update is called once per frame
     void Start()
     {
@@ -14,5 +19,16 @@ public class ChickenSpawner : MonoBehaviour
         int y = Random.Range(-15, 25);
         Instantiate(chicken, new Vector3(x, 1, y), Quaternion.identity);
        }
+	   Debug.Log(PlayerData.gun);
+	   
+	   if(PlayerData.gun == "Deagle"){
+		   Instantiate(gun1, player.transform);
+	   }
+	   if(PlayerData.gun == "Shotgun"){
+		   Instantiate(gun2, player.transform);
+	   }
+	   if(PlayerData.gun == "Ak"){
+		   Instantiate(gun3, player.transform);
+	   }
     }
 }

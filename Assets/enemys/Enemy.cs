@@ -26,7 +26,7 @@ public class Enemy : MonoBehaviour
         firstColor = material.GetComponent<MeshRenderer> ().material.color;
 
     }
-    public void FixedUpdate(){
+    public void Update(){
         if(time > 5){
             foreach(MeshRenderer g in GetComponentsInChildren<MeshRenderer>())
             {
