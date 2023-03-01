@@ -412,19 +412,7 @@ MonoBehaviour:
   - eventID: 0
     callback:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1920277715}
-          m_TargetAssemblyTypeName: MenuGuns, Assembly-CSharp
-          m_MethodName: selectedGun
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 100
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
 --- !u!1 &209505203
 GameObject:
   m_ObjectHideFlags: 0
@@ -1497,7 +1485,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   barrel: {fileID: 0}
   force: 600
-  name: Shotgun
+  nameid: Shotgun
   damage: damage
   speed: 100
 --- !u!1 &963625271
@@ -1726,7 +1714,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   barrel: {fileID: 0}
   force: 600
-  name: Ak
+  nameid: Ak
   damage: damage
   speed: 100
 --- !u!1 &1381811677
@@ -2259,7 +2247,7 @@ MonoBehaviour:
     m_Bottom: 0
   m_ChildAlignment: 1
   m_Spacing: 0
-  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
@@ -2319,7 +2307,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   barrel: {fileID: 0}
   force: 600
-  name: Deagle
+  nameid: Deagle
   damage: damage
   speed: 100
 --- !u!1 &1686564216
@@ -2606,19 +2594,7 @@ MonoBehaviour:
   - eventID: 0
     callback:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1920277715}
-          m_TargetAssemblyTypeName: MenuGuns, Assembly-CSharp
-          m_MethodName: selectedGun
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 150
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
 --- !u!1 &1920277710
 GameObject:
   m_ObjectHideFlags: 0
@@ -3037,19 +3013,7 @@ MonoBehaviour:
   - eventID: 0
     callback:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1920277715}
-          m_TargetAssemblyTypeName: MenuGuns, Assembly-CSharp
-          m_MethodName: selectedGun
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 200
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
 --- !u!1 &1989297282
 GameObject:
   m_ObjectHideFlags: 0

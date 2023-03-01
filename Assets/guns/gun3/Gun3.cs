@@ -5,7 +5,7 @@ using UnityEngine;
 public class Gun3 : Gun
 {
     void Start(){
-	    name = "Ak47";
+	    nameid = "Ak";
 	}
     // Update is called once per frame
     

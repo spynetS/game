@@ -3878,7 +3878,7 @@ MonoBehaviour:
   player: {fileID: 1772654646}
   gun1: {fileID: 3384186984989356213, guid: bee5a5bd51fbbbb4da185b41466cf6e0, type: 3}
   gun2: {fileID: 6871893719574977656, guid: 3b63dc86d4bc11747bd135eb67fdb991, type: 3}
-  gun3: {fileID: 0}
+  gun3: {fileID: 35900971653577786, guid: e4eee20a912a15044b709c90e7481591, type: 3}
 --- !u!4 &1127299343
 Transform:
   m_ObjectHideFlags: 0
@@ -5166,6 +5166,18 @@ PrefabInstance:
     - target: {fileID: 4886101968738366, guid: d2edcf95960b81249bf3f4a30ad1a908, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 65306087575105876, guid: d2edcf95960b81249bf3f4a30ad1a908, type: 3}
+      propertyPath: m_Size.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65306087575105876, guid: d2edcf95960b81249bf3f4a30ad1a908, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65306087575105876, guid: d2edcf95960b81249bf3f4a30ad1a908, type: 3}
+      propertyPath: m_Size.z
+      value: 2.16
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114412009841591444, guid: d2edcf95960b81249bf3f4a30ad1a908, type: 3}

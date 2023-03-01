@@ -16,9 +16,12 @@ public class MenuGuns : MonoBehaviour
 	public Gun gun3;
 	
 	public void addGun(int gun){
-		if(!PlayerData.guns.Contains(gun.ToString()) && PlayerData.points-gun>0){
-			PlayerData.guns+=gun.ToString();
-			PlayerData.points = PlayerData.points-gun;
+		if(!PlayerData.guns.Contains(gun.ToString())){
+			if(PlayerData.points-gun>0){
+				PlayerData.guns+=gun.ToString();
+				PlayerData.points = PlayerData.points-gun;
+			}
+			selectedGun(gun);
 		}
 	}
 	private Gun getGun(int gun){
@@ -29,8 +32,8 @@ public class MenuGuns : MonoBehaviour
 	}
 	public void selectedGun(int gun){
 		Gun g = getGun(gun);
-		PlayerData.gun = g.name;
-		title.text = g.name;
+		PlayerData.gun = g.nameid;
+		title.text = g.nameid;
 		info.text = "Damage:" + g.damage +"\n Speed:"+g.speed;
 	}
     // Update is called once per frame

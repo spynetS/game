@@ -8,15 +8,16 @@ public class Gun : MonoBehaviour
     public GameObject barrel;
     public float force = 600;
 	
-	public string name = "Deagle";
-	public string damage = "damage";
+	public string nameid = "Deagle";
+	public int damage = 10;
 	public int speed = 100;
+	public int timer = 0;
 	
     public void hit(){
         GetComponentInParent<Player>().points++;
     }
-	int timer = 0;
-    public void Shoot(){
+	
+    public virtual void Shoot(){
 			GameObject clone = Instantiate(bullet, (barrel.transform.position+(transform.forward*1)), Quaternion.identity);
 			clone.GetComponent<Bullet>().from = this;
 			clone.transform.LookAt(barrel.transform.position);

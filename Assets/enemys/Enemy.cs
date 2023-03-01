@@ -11,9 +11,11 @@ public class Enemy : MonoBehaviour
     int time = 0;
 
     public void takeDamage(Collider other){
-        if(health <= 0)
+        health -= other.GetComponentInParent<Bullet>().from.damage;
+       
+		if(health <= 0)
             Destroy(gameObject);
-        health -= other.GetComponentInParent<Bullet>().damage;
+		
         foreach(MeshRenderer g in GetComponentsInChildren<MeshRenderer>())
         {
             g.material.color = Color.red;
