@@ -3879,6 +3879,8 @@ MonoBehaviour:
   gun1: {fileID: 3384186984989356213, guid: bee5a5bd51fbbbb4da185b41466cf6e0, type: 3}
   gun2: {fileID: 6871893719574977656, guid: 3b63dc86d4bc11747bd135eb67fdb991, type: 3}
   gun3: {fileID: 35900971653577786, guid: e4eee20a912a15044b709c90e7481591, type: 3}
+  timer: 1000
+  timerText: {fileID: 790752174}
 --- !u!4 &1127299343
 Transform:
   m_ObjectHideFlags: 0

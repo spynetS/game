@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
     public int health = 100;
     public GameObject material;
     public Color firstColor;
-    public GameObject healthText;
+    public Text healthText;
     int time = 0;
 
     public void takeDamage(Collider other){
@@ -29,14 +30,14 @@ public class Enemy : MonoBehaviour
 
     }
     public void Update(){
-        if(time > 5){
+        if(time > 10){
             foreach(MeshRenderer g in GetComponentsInChildren<MeshRenderer>())
             {
                 g.material.color = firstColor;
             }
         }
         time++;
-        healthText.GetComponent<TMPro.TextMeshPro>().text = health.ToString();
+        healthText.text = health.ToString();
         GameObject player =GameObject.FindGameObjectsWithTag("Player")[0]; 
         Debug.Log(player);
         healthText.transform.LookAt(player.transform.position); 

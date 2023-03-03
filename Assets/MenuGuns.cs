@@ -15,6 +15,10 @@ public class MenuGuns : MonoBehaviour
 	public Gun gun2;
 	public Gun gun3;
 	
+	public void Start(){
+		Cursor.lockState = CursorLockMode.None;
+	}
+	
 	public void addGun(int gun){
 		if(!PlayerData.guns.Contains(gun.ToString())){
 			if(PlayerData.points-gun>0){

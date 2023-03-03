@@ -10,7 +10,7 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {		
-        float translation = Input.GetAxis("Vertical") * curspeed;
+        float translation  = Input.GetAxis("Vertical") * curspeed;
         float translationx = Input.GetAxis("Horizontal") * curspeed;
         /* float rotation = Input.GetAxis("Horizontal") * rotSpeed; */
 
