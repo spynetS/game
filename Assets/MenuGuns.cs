@@ -30,8 +30,8 @@ public class MenuGuns : MonoBehaviour
 	}
 	private Gun getGun(int gun){
 		
-		if(gun == 150) return gun2;
-		if(gun == 200) return gun3;
+		if(gun == 6000) return gun2;
+		if(gun == 12000) return gun3;
 		return gun1;
 	}
 	public void selectedGun(int gun){

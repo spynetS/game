@@ -11,11 +11,23 @@ public class Enemy : MonoBehaviour
     public Text healthText;
     int time = 0;
 
+	public void replace(Collider other){
+		int x = Random.Range(-20, 20);
+        int y = Random.Range(-15, 25);
+		transform.position = new Vector3(x,1,y);
+        health = 100;
+	    other.GetComponentInParent<Bullet>().from.die();
+    }
+
+
+
     public void takeDamage(Collider other){
         health -= other.GetComponentInParent<Bullet>().from.damage;
        
-		if(health <= 0)
-            Destroy(gameObject);
+		if(health <= 0){
+			replace(other);
+		}
+        
 		
         foreach(MeshRenderer g in GetComponentsInChildren<MeshRenderer>())
         {
@@ -39,7 +51,6 @@ public class Enemy : MonoBehaviour
         time++;
         healthText.text = health.ToString();
         GameObject player =GameObject.FindGameObjectsWithTag("Player")[0]; 
-        Debug.Log(player);
         healthText.transform.LookAt(player.transform.position); 
         healthText.transform.Rotate(new Vector3(0,180,0));
     }

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &727390338
+--- !u!1 &541541134
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,7 +8,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 727390339}
+  - component: {fileID: 541541135}
   m_Layer: 0
   m_Name: barrel
   m_TagString: Untagged
@@ -16,22 +16,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &727390339
+--- !u!4 &541541135
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 727390338}
+  m_GameObject: {fileID: 541541134}
   m_LocalRotation: {x: -7.1054274e-15, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.3936309, y: 0.78326803, z: -0.18665254}
   m_LocalScale: {x: 472.41727, y: 472.41714, z: 472.41727}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2719290775043713551}
+  m_Father: {fileID: 3137484798702308289}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &2465269927796755940
+--- !u!1001 &3170583273645255722
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -44,27 +44,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8f9696fb6017be144a307b6586855ac0, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.002116773
+      value: 0.0008070832
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8f9696fb6017be144a307b6586855ac0, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.0021167733
+      value: 0.0008070833
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8f9696fb6017be144a307b6586855ac0, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.002116773
+      value: 0.0008070832
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8f9696fb6017be144a307b6586855ac0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.00332
+      value: 0.00142
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8f9696fb6017be144a307b6586855ac0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.001658
+      value: -0.00063
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8f9696fb6017be144a307b6586855ac0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0051851
+      value: 0.00234
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8f9696fb6017be144a307b6586855ac0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -108,32 +108,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f9696fb6017be144a307b6586855ac0, type: 3}
---- !u!4 &2719290775043713551 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8f9696fb6017be144a307b6586855ac0, type: 3}
-  m_PrefabInstance: {fileID: 2465269927796755940}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3384186984989356213 stripped
+--- !u!1 &2360243965726724475 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8f9696fb6017be144a307b6586855ac0, type: 3}
-  m_PrefabInstance: {fileID: 2465269927796755940}
+  m_PrefabInstance: {fileID: 3170583273645255722}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5305658754239368524
+--- !u!114 &5305658754392217280
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3384186984989356213}
+  m_GameObject: {fileID: 2360243965726724475}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8a0763269ed25630985cef9cb198a93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 8636403598349945797, guid: 0b2853c6b04bbe2a7a4b6935319c8620, type: 3}
-  barrel: {fileID: 727390338}
+  barrel: {fileID: 541541134}
   force: 600
   nameid: Deagle
   damage: 40
   speed: 100
   timer: 0
+--- !u!4 &3137484798702308289 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8f9696fb6017be144a307b6586855ac0, type: 3}
+  m_PrefabInstance: {fileID: 3170583273645255722}
+  m_PrefabAsset: {fileID: 0}

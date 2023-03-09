@@ -10,10 +10,11 @@ public class ChickenSpawner : MonoBehaviour
     public int        chickens;
     public GameObject chicken;
 	public GameObject player;
+	public GameObject gun0;
 	public GameObject gun1;
 	public GameObject gun2;
 	public GameObject gun3;
-	public int timer = 1000;
+	public int timer = 100000;
 	public TMP_Text timerText;
 
     // Update is called once per frame
@@ -29,18 +30,20 @@ public class ChickenSpawner : MonoBehaviour
 	   if(PlayerData.gun == "Deagle"){
 		   Instantiate(gun1, player.transform);
 	   }
-	   if(PlayerData.gun == "Shotgun"){
+	   else if(PlayerData.gun == "Shotgun"){
 		   Instantiate(gun2, player.transform);
 	   }
-	   if(PlayerData.gun == "Ak"){
+	   else if(PlayerData.gun == "Ak"){
 		   Instantiate(gun3, player.transform);
+	   }else
+	   {
+		   Instantiate(gun0, player.transform);
 	   }
     }
 	
 	public void Update(){
 		
 		timerText.text = timer.ToString();
-		Debug.Log(timer);
 		if(timer <=0){
 			SceneManager.LoadScene(2);
 		}

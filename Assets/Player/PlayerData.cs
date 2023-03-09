@@ -4,7 +4,7 @@ using UnityEngine;
 
 static public class PlayerData
 {
-	public static int    points  = 200;
+	public static int    points  = 0;
 	public static string guns    =  "";
-	public static string gun     =  "Shotgun";  
+	public static string gun     =  "";  
 }

@@ -391,7 +391,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 100
+          m_IntArgument: 2500
           m_FloatArgument: 0
           m_StringArgument: 0
           m_BoolArgument: 0
@@ -1486,8 +1486,9 @@ MonoBehaviour:
   barrel: {fileID: 0}
   force: 600
   nameid: Shotgun
-  damage: damage
+  damage: 0
   speed: 100
+  timer: 0
 --- !u!1 &963625271
 GameObject:
   m_ObjectHideFlags: 0
@@ -1715,8 +1716,9 @@ MonoBehaviour:
   barrel: {fileID: 0}
   force: 600
   nameid: Ak
-  damage: damage
+  damage: 0
   speed: 100
+  timer: 0
 --- !u!1 &1381811677
 GameObject:
   m_ObjectHideFlags: 0
@@ -1775,7 +1777,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: price 100:-
+  m_text: price 12000:-
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1910,7 +1912,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: price 100:-
+  m_text: price 6000:-
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2308,8 +2310,9 @@ MonoBehaviour:
   barrel: {fileID: 0}
   force: 600
   nameid: Deagle
-  damage: damage
+  damage: 0
   speed: 100
+  timer: 0
 --- !u!1 &1686564216
 GameObject:
   m_ObjectHideFlags: 0
@@ -2535,7 +2538,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 150
+          m_IntArgument: 6000
           m_FloatArgument: 0
           m_StringArgument: 1
           m_BoolArgument: 0
@@ -2786,7 +2789,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: price 100:-
+  m_text: price 2500:-
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2954,7 +2957,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 200
+          m_IntArgument: 12000
           m_FloatArgument: 0
           m_StringArgument: 2
           m_BoolArgument: 0
